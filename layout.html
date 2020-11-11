@@ -1,32 +1,33 @@
 <!DOCTYPE html>
 <html>
-    <style>
-    .fright{
-        float: right;
-        border-style: groove;
-        padding: 10px;
-        margin: 10px;
-        background-color: aquamarine;
-    }
-    p.fright:hover{
-        display: block;
-    }
-    .fleft{
-        float: left;
-        border-style: groove;
-        padding: 10px;
-        margin: 10px;
-        background-color: lightcoral;
-    }
-    .fleft:hover{
-        float: right;
-    }
 
-    </style>
-    <head>
-        <h1>Test of h1</h1>
+<head>
     <style>
-        div{
+        .fright {
+            float: right;
+            border-style: groove;
+            padding: 10px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+
+        p.fright:hover {
+            display: block;
+        }
+
+        .fleft {
+            float: left;
+            border-style: groove;
+            padding: 10px;
+            margin: 10px;
+            background-color: lightcoral;
+        }
+
+        .fleft:hover {
+            float: right;
+        }
+
+        div {
             float: right;
             border-style: groove;
             padding: 10px;
@@ -34,44 +35,45 @@
             background-color: lime;
         }
 
-            h1:hover{
-                background-color: magenta;
-                border: palegreen;
-            }
+        h1:hover {
+            background-color: magenta;
+            border: palegreen;
+        }
 
-        body{
+        body {
             margin: 3;
         }
-        .header{
+
+        .header {
             background-color: seagreen;
             padding-right: 20px;
             font-size: 22px;
             text-align: center;
         }
     </style>
-    </head>
-    <body>
-        <div class="header"> Header Test</div>
-        <h2>body Test</h2>
-        <div class="header">This is the header</div>
-        <div class="navbar">
-            <a href="#">Menu Item 1</a>
-            <div class="dropmenu">
-                <button class="dmbutton">Menu Item 2</button>
-                <div class="dropmenucontent">
-                    <a href="#">Sub Menu Item 1</a>
-                    <a href="#">Sub Menu Item 2</a>
-                </div>
+</head>
+
+<body>
+    <div class="header">This is the header</div>
+    <div class="navbar">
+        <a href="#">Menu Item 1</a>
+        <div class="dropmenu">
+            <button class="dmbutton">Menu Item 2</button>
+            <div class="dropmenucontent">
+                <a href="#">Sub Menu Item 1</a>
+                <a href="#">Sub Menu Item 2</a>
             </div>
-            <a href="#">Menu Item 3</a>
         </div>
+        <a href="#">Menu Item 3</a>
+    </div>
 
-        <div class="fright">1 I'm a right div</div>
-        <div class="fleft">2 I'm a left div</div>
-        <div class="fright">3 I'm a right div</div>
-        <div class="fleft">4 I'm a left div</div>
-        <p class="fright">I'm a right paragraph? what happenbs if i'm too big?</p>
+    <div class="fright">1 I'm a right div</div>
+    <div class="fleft">2 I'm a left div</div>
+    <div class="fright">3 I'm a right div</div>
+    <div class="fleft">4 I'm a left div</div>
+    <p class="fright">I'm a right paragraph? what happens if i'm too big?</p>
 
 
-    </body>
+</body>
+
 </html>
