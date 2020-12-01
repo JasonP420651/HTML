@@ -144,6 +144,12 @@
             width: 100%;
         }
 
+        .row::after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+
 @media screen and(max-width: 100%){
     .leftcol,.maintcontent,.rightcol{
         width: auto;
@@ -171,23 +177,27 @@
         <a href="#">Menu Item 3</a>
     </div>
 
-    <div class="maincontainer">
-        <div class="leftcol">This is a left column</div>
-        <div class="maincontent">here is the main content</div>
-        <div class="rightcol">
-            This is the right column
-            <p style="font-size:3vw;"></p>
-            <p>
-                Here is a styled paragraph in between the two paragraphs
-            </p>
-        </div>
-    </div>
+    <div class="row">
 
-        <div class="fright">1 I'm a right div</div>
-        <div class="fleft">2 I'm a left div</div>
-        <div class="fright">3 I'm a right div</div>
-        <div class="fleft">4 I'm a left div</div>
-        <p class="fright">I'm a right paragraph? what happens if i'm too big?</p>
+        <div class="maincontainer">
+            <div class="leftcol">This is a left column</div>
+            <div class="maincontent">here is the main content</div>
+            <div class="rightcol">
+                This is the right column
+                <p style="font-size:3vw;"></p>
+                <p>
+                    Here is a styled paragraph in between the two paragraphs
+                </p>
+            </div>
+        </div>
+
+            <div class="fright">1 I'm a right div</div>
+            <div class="fleft">2 I'm a left div</div>
+            <div class="fright">3 I'm a right div</div>
+            <div class="fleft">4 I'm a left div</div>
+            <p class="fright">I'm a right paragraph? what happens if i'm too big?</p>
+
+        </div>
 
     </div>
 
