@@ -75,6 +75,7 @@
 
         p.fright:hover {
             display: block;
+            transform: scale(4px)
         }
 
         .fleft {
@@ -132,10 +133,18 @@
             float: center;
             width: 75%;
         }
+
+        .maincontent:hover{
+            transform: matrix3d(6deg)
+        }
         
         .rightcol{
             float: right;
             width: 25%;
+        }
+
+        .rightcol:hover{
+            transform: rotate(32deg);
         }
 
         .row::after{
