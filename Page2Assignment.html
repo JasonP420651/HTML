@@ -17,9 +17,147 @@
             text-align: center;
         }
 
-        .foot{
-            
+        
+        *{
+            box-sizing: border-box;
         }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .dmbutton:hover, .dropbtn:focus {
+            background-color: #2980B9;
+        }
+
+        .dropmenu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropmenucontent {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            overflow: auto;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropmenucontent a {
+            color: magenta;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropmenucontent a:hover {background-color: #ddd;}
+
+        .dropmenu:hover .dropmenucontent {display: block;}
+        
+        .dropmenu:hover .dropbutton {background-color: mediumspringgreen}
+
+        .fright {
+            float: right;
+            border-style: groove;
+            padding: 10px;
+            margin: 10px;
+            background-color: aquamarine;
+        }
+
+        p.fright:hover {
+            display: block;
+            transform: scale(200%)
+        }
+
+        .fleft {
+            float: left;
+            border-style: groove;
+            padding: 10px;
+            margin: 10px;
+            background-color: lightcoral;
+        }
+
+        .fleft:hover {
+            float: right;
+        }
+
+        div {
+            border-style: groove;
+            padding: 10px;
+            margin: 10px;
+            background-color: cornsilk;
+        }
+
+        h1:hover {
+            background-color: magenta;
+            border: palegreen;
+        }
+
+        body {
+            margin: 3px;
+        }
+
+        .maincontainer{
+            width: 100%;
+        }
+
+        .leftcol{
+            float: left;
+            width: 25%
+        }
+
+        .maincontent{
+            float: center;
+            width: 80%;
+        }
+
+        .maincontent:hover{
+            transform: matrix3d(0.583333, 0.186887, 0.79044, 0, -0.52022, 0.833333, 0.186887, 0, -0.623773, -0.52022, 0.583333, 0, 0, 0, 0, 1)
+        }
+        
+        .rightcol{
+            float: right;
+            width: 25%;
+        }
+
+        .rightcol:hover{
+            transform: rotate(32deg);
+        }
+
+        .row::after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+
+@media screen and(max-width: 500px){
+    .leftcol,.maintcontent,.rightcol{
+        width: 100%;
+        padding: 0px;
+    }
+}
+
         
     </style>
 
