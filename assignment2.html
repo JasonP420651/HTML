@@ -2,14 +2,8 @@
 <html>
     <style>
 
-        *{
+*{
             box-sizing: border-box;
-        }
-
-        .row::after{
-            content: " ";
-            display: table;
-            clear: both;
         }
 
         .navbar {
@@ -65,7 +59,7 @@
 
         .dropmenu:hover .dropmenucontent {display: block;}
         
-        .dropmenu:hover .dropbutton {background-color: mediumspringgreen}
+        .dropmenu:hover .dropbutton {background-color: cornsilk}
 
         .fright {
             float: right;
@@ -73,10 +67,6 @@
             padding: 10px;
             margin: 10px;
             background-color: aquamarine;
-        }
-
-        p.fright:hover {
-            display: block;
         }
 
         .fleft {
@@ -87,21 +77,17 @@
             background-color: lightcoral;
         }
 
-        .fleft:hover {
-            float: right;
-        }
 
         div {
-            float: left;
             border-style: groove;
             padding: 10px;
             margin: 10px;
-            background-color: lime;
+            background-color: cornflowerblue;
         }
 
         h1:hover {
             background-color: magenta;
-            border: palegreen;
+            border:cornsilk;
         }
 
         body {
@@ -122,9 +108,47 @@
             text-align: center;
         }
 
+        .maincontainer{
+            width: 100%;
+        }
+
         .leftcol{
             float: left;
-            width: 75%
+            width: 25%
+        }
+
+        .maincontent{
+            float: center;
+            width: 50%;
+        }
+        
+        .rightcol{
+            float: right;
+            width: 25%;
+        }
+
+        .row::after{
+            content:" ";
+            display: table;
+            clear: both;
+        }
+
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .image{
+            border: 2px;
+            padding: 0px;
+            width: 50%;
+            height: 70%;
+            background: url("Ferrari.jpg");
+        }
+
+        .image:hover{
+            background: url("GP2 Engine.jpg");
         }
 
         .image{
@@ -163,9 +187,9 @@
 
         <div class="row">
             <div class="rightcol">
-                <h1 style="color: rgb(0, 63, 0)"></h1>This is the right column</h1>
+                <h1 style="color: rgb(0, 63, 0)"></h1>Inline</h1>
                 <p>
-                    Here is a styled paragraph in between the two paragraphs
+                    Inline
                 </p>
             </div>
         </div>
