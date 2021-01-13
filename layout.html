@@ -212,6 +212,16 @@
             </div>
         <div class="maincontent">
             here is the main content
+            
+            <p id="demo">JavaScript can change the HTML content.</p>
+            <button type="button" onclick='document.getElementById("demo").innerHTML = "Changed!"'>Button Example!</button>
+
+
+            <button onclick="document.getElementById('myImage').src='GP2 Engine.jpg'">Original</button>
+
+            <img id="myImage" src="GP2 Engine.jpg" style="width:100px">
+
+            <button onclick="document.getElementById('myImage').src='Ferrari.jpg'">New</button>
         </div>
         <div class="image"><p> </p></div>
     </div>
