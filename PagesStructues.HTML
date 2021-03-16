@@ -133,6 +133,15 @@
     <body onload="detectBrowser()">
     </body>
 
+    <script>
+        var user = detect.parse(navigator.userAgent);
+        console.log(
+        user.browser.family,
+        user.browser.version,
+        user.os.name
+        );
+    </script>
+
     <body>
         <div class="container">
             <div class="row">
