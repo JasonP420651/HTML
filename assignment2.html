@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <style>
-        *{
+            *{
                 box-sizing: border-box;
             }
 
@@ -127,7 +125,7 @@
             
             .rightcol{
                 float: right;
-                width: 25%;
+                width: 85%;
             }
 
             .row::after{
@@ -160,58 +158,47 @@
 
             /* need to add the ones below which are not in style */
 
+        </style>
+
+        WIP
+        Assignment 2
+    </head>
+
+    <body>
 
 
+        <div class="header"><h1><header>This  is the Header</header></h1></div>
+        <div class="navbar">
+            <a href="Page2Assignment.html">Home</a>
+            <div class="dropmenu">
+                <button class="dmbutton">CSS in Page</button>
+                <div class="dropmenucontent">
+                    <a href="assignment2Ebed.html">Embedded CSS</a>
+                    <a href="assignment2.html">Inline CSS</a>
+                </div>
+            </div>
+            <a href="assignment2External.html">Exterior CSS</a>
+        </div>
+        <div class="row">
+            <h1>Inline</h1>
+            <p>Inline is used to implament CSS inside of the line that is using the CSS</p>
+        </div>
 
-        @media screen and(max-width: 500px){}
-        .leftcol,.maintcontent,.rightcol{
-        width: 100%;
-        padding: 0px;
-        }
-
-        /* need to add the ones below which are not in style */
-
-    </style>
-</head>
-
-<body>
-
-
-    <div class="header"><h1><header>This  is the Header</header></h1></div>
-    <div class="navbar">
-        <a href="Page2Assignment.html">Home</a>
-        <div class="dropmenu">
-            <button class="dmbutton">CSS in Page</button>
-            <div class="dropmenucontent">
-                <a href="assignment2Ebed.html">Embedded CSS</a>
-                <a href="assignment2.html">Inline CSS</a>
+        <div class="row">
+            <p>
+                <img src="Assignment2WebDev_Inline.PNG" alt="Ferrari.jpg">
+            </p>
+            <div class="rightcol">
+                <h1 style="color: rgb(0, 63, 0)"></h1>Inline</h1>
+                <p>
+                    Inline is benefitial for use when there is a need for only one line to be changed into a different style. or if one section needs to be differnet using CSS, this the worst for having multiple sections with the same CSS as it means there is moer code and more to change if somthing goes wrong making it useful for singlular segments 
+                </p>
             </div>
         </div>
-        <a href="assignment2External.html">Exterior CSS</a>
-    </div>
-
-    <div class="row">
-
-    <img src="css-box-model.png" width="300px">
-
-    </div>
-
-    <div class="row">
-            <div class="fright">Box Model</div>
-            <div class="fleft">Box Model demonstraites how CSS uses diffeing code to decide how the boxes interact.
-                These are shown above and how they interact with eachother. Each lay on eachother as aditions to eachother, with the margin being transparent or a push from the layer behind it.
-                The border contains the rest of the box, it can be coloured, and have differing types to allow for transitions wanted within the website.
-                Padding is the gap between the content and border, this is used to stop contenet from being dificult to read as it is too close to the border to read well or for an effect such as hovering over may cause the text to move to the right using the padding to push it in a direction
-                The Content is what is displayed within the box and can be text, images, drop boxes and anything which would need to be presented to the user
-            </div>
-            <p class="fright"><img src="AssignmentBoxModel.PNG" width="100px"></p>
-
+    
+        <div class="footer">
+            This is the footer © - where copyrights would be placed
         </div>
-    </div>
-
-    <div class="footer">
-        This is the footer © - where copyrights would be placed
-    </div>
-</body>
-
+    </body>
+    
 </html>

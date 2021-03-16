@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <style>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-    <style>
-        *{
+            *{
                 box-sizing: border-box;
+            }
+
+            .embedded{
+                color: rgb(0, 63, 0);
             }
 
             .navbar {
@@ -127,7 +129,7 @@
             
             .rightcol{
                 float: right;
-                width: 25%;
+                width: 85%;
             }
 
             .row::after{
@@ -155,63 +157,54 @@
             }
 
             .image{
-                background: url("Assignment2WebDev_inline.PNG");
+                background: url("Assignment2WebDev_Embedded.PNG");
             }
 
             /* need to add the ones below which are not in style */
 
+        </style>
+
+        WIP
+        Assignment 2
+    </head>
+
+    <body>
 
 
+        <div class="header"><h1><header>This  is the Header</header></h1></div>
+        <div class="navbar">
+            <a href="Page2Assignment.html">Home</a>
+            <div class="dropmenu">
+                <button class="dmbutton">CSS in Page</button>
+                <div class="dropmenucontent">
+                    <a href="assignment2Ebed.html">Embedded CSS</a>
+                    <a href="assignment2.html">Inline CSS</a>
+                </div>
+            </div>
+            <a href="assignment2External.html">Exterior CSS</a>
+        </div>
+        <div class="row">
+            <h1>Exterior</h1>
+            <p>Exterior is where the CCS is in another page, and can be called by any other Page</p>
+            <div class="image"><p> </p></div>
+        </div>
 
-        @media screen and(max-width: 500px){}
-        .leftcol,.maintcontent,.rightcol{
-        width: 100%;
-        padding: 0px;
-        }
-
-        /* need to add the ones below which are not in style */
-
-    </style>
-</head>
-
-<body>
-
-
-    <div class="header"><h1><header>This  is the Header</header></h1></div>
-    <div class="navbar">
-        <a href="Page2Assignment.html">Home</a>
-        <div class="dropmenu">
-            <button class="dmbutton">CSS in Page</button>
-            <div class="dropmenucontent">
-                <a href="assignment2Ebed.html">Embedded CSS</a>
-                <a href="assignment2.html">Inline CSS</a>
+        <div class="row">
+            <p>
+                <img src="Assignment2WebDev_Exterior1.PNG" alt="Ferrari.jpg" width="200px">
+                <img src="Assignment2WebDev_Exterior2.PNG" alt="Ferrari.jpg" width="200px">
+            </p>
+            <div class="rightcol">
+                <h1 style="color: rgb(0, 63, 0)"></h1></h1>
+                <p>
+                    Exterior is useful for multiple pages using the same format such as how this webpage is done, it means that if the colour was to be changed on every page then it would be in one spot where they can all be changed. This is vast work for any one time use of CSS like how Interior is used and is extra programing if it will only be used on one page making it obsolite unless used on two or more pages.
+                </p>
             </div>
         </div>
-        <a href="assignment2External.html">Exterior CSS</a>
-    </div>
-
-    <div class="row">
-
-    <img src="css-box-model.png" width="300px">
-
-    </div>
-
-    <div class="row">
-            <div class="fright">Box Model</div>
-            <div class="fleft">Box Model demonstraites how CSS uses diffeing code to decide how the boxes interact.
-                These are shown above and how they interact with eachother. Each lay on eachother as aditions to eachother, with the margin being transparent or a push from the layer behind it.
-                The border contains the rest of the box, it can be coloured, and have differing types to allow for transitions wanted within the website.
-                Padding is the gap between the content and border, this is used to stop contenet from being dificult to read as it is too close to the border to read well or for an effect such as hovering over may cause the text to move to the right using the padding to push it in a direction
-                The Content is what is displayed within the box and can be text, images, drop boxes and anything which would need to be presented to the user
-            </div>
-            <p class="fright"><img src="AssignmentBoxModel.PNG" width="100px"></p>
-
+    
+        <div class="footer">
+            This is the footer © - where copyrights would be placed
         </div>
-    </div>
-
-    <div class="footer">
-        This is the footer © - where copyrights would be placed
-    </div>
-</body>
-
+    </body>
+    
 </html>
