@@ -9,6 +9,24 @@
                 box-sizing: border-box;
             }
 
+            @keyframes example {
+                0%   {background-color:red; left:0px; top:0px;}
+                25%  {background-color:yellow; left:200px; top:0px;}
+                50%  {background-color:blue; left:200px; top:200px;}
+                75%  {background-color:green; left:0px; top:200px;}
+                100% {background-color:red; left:0px; top:0px;}
+            }
+
+            .MovementColour {
+                width: 100px;
+                height: 100px;
+                position: relative;
+                background-color: red;
+                animation-name: example;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+
             .navbar {
                 background-color: #333;
             }
@@ -214,10 +232,10 @@
         <div>
             CSS Selectors
             some used in this are:
-            .class - all elements with the name of the class
-            .class1.class2 - all elements that are Class2 desendant of Class1
-            .element - selects all elements of the type e.g. body or p, body is used in this webpage
-            :active - selects the active link
+            <p>.class - all elements with the name of the class</p>
+            <p>.class1.class2 - all elements that are Class2 desendant of Class1</p>
+            <p>.element - selects all elements of the type e.g. body or p, body is used in this webpage</p>
+            <p>:active - selects the active link</p>
 
             The image bellow demonstrates the calss Navbar, desendant a, and the active selector.
             <img src="CaptureCode.PNG" width = 150px>
@@ -226,9 +244,27 @@
 
             what these do is allow for selections to be made for what is going to be changed/edited in the CSS such as the above with box model sizes and colours, there are also more selections such as
 
-            :read-only - selects input as read-only
-            :read-write - selects input as writable and readable
-            :hover - this selects link when the mouse is over anthing asigned with the class beforehand
+            <p>:read-only - selects input as read-only</p>
+            <p>:read-write - selects input as writable and readable</p>
+            <p>:hover - this selects link when the mouse is over anthing asigned with the class beforehand</p>
+
+            These are useful for specific senarios such as designating standards, animations and specifying what is different to another selection.
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <p>
+                Animation - here are some examples of animations that can be done with CSS and code accompanying them
+            </p>
+            <p>
+                <div class="MovementColour">
+                </div>
+            </p>
+            <p>
+                The above is an exxample of 3 animations, translations/movemnet, colour change and repeating animations
+                the code bellow shows 
+            </p>
         </div>
     </div>
 
