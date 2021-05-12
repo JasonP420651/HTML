@@ -207,73 +207,14 @@
         </div>
 
         <div>
-            <h1>
-                JavaScript
-            </h1>
-            <p>
-                JavaScript is an object oriented language which in website design is used for client side handling on web pages, this used Objects and methods to control how the objects interact, Objects are a used to store infomation and interactions between the user, theis object and the interactions between other objects which is useful. Methods are linked to objects through calsses, objects with a designated class will behave in a specific manor outlined by the method and such can be implamented onto many objects through the classes.
-                 Event handling is often used within these methods as it decides what reaction should take place after an event, this will include errors and recovery routines for anything such as an error occuring to ensure the website is still funcationing after a mistake made by a user. Java is not a very secure method either as it is a common language and is used in a large array of things making it easier to learn how to breach it such as a public method being accessable by a user which could contain sensative infomation through other methods or objects which are user accesable making the infomation accessable. 
-                 There are four ways to access Java, these are Public - methods accessable ny all classes. Private - only accessable by specified classes. Protected - this makes the acess to the method it is accesable in or subclasses. Default - This is atributed if no other sccess is labled and can only be accessed by the specific method package it is a part of.
-            </p>
+            Users using diferent devices will have differences in avalible software and hardwares as well as specifics for that device they will also have commonalities such as phones having smaller screens and often bieng help in a portrate position rather than the landscape of a computer monitor, this also includes things such as RAM, CPUs, and connection types as thes can imit the porcessing power and transport abilities of a device as a wireless device with 2GB ram as it will strugle to process and load a large webiste with many complex parts compered to one with a cable connection and more RAM. The web browser may also affect the website as with some code it can lead to functions not working properly or not working as well as they would on other browsers
         </div>
 
-        <body>
-
-            <h2>The Navigator Object</h2>
-
-            <p>
-                this is an example of the bellow code
-                <img src="Code 5.PNG" width = 50px>
-            </p>
-            
-            <p>The cookieEnabled property returns true if cookies are enabled:</p>
-            
-            <p id="demo"></p>
-            
-            <script>
-            document.getElementById("demo").innerHTML =
-            "navigator.cookieEnabled is " + navigator.cookieEnabled;
-            </script>
-            
-            </body>
-
-            <body>
-                bellow is a browser detection but browser detection comes up as netscape due to compatability of browsers, the alerts which showed on load up detects this and sends a corresponding messsage due to the use of this.
-                <script type="text/javascript">
-                    var browser=navigator.appName;
-                    var b_version=navigator.appVersion;
-                    var version=parseFloat(b_version);
-                    document.write("Browser name: "+ browser);
-                    document.write("<br />");
-                    document.write("Browser version: "+ version);
-                </script>
-            </body>
-
-            <head>
-                <script type="text/javascript">
-                function detectBrowser()
-                {
-                var browser=navigator.appName;
-                var b_version=navigator.appVersion;
-                var version=parseFloat(b_version);
-                if ((browser=="Netscape"||browser=="Microsoft Internet Explorer")
-                && (version>=4))
-                {
-                alert("Your browser is good enough!");
-                }
-                else
-                {
-                alert("It's time to upgrade your browser!");
-                }
-                }
-                </script>
-                </head>
-                <body onload="detectBrowser()">
-                </body>
-                <p>
-                    referance
-                </p>
-                <p>https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182625(v=vs.85)?redirectedfrom=MSDN#legacy-api-additions-changes-and-removals</p>
+        <div>
+            bandwidth -  for a website whihc  continously updates such as Slack a constant stream of data is needed as a specific size, for anynthing such as a large website small bandwidths can lead to slow access of the webpage and reduced level of performance due to the lack of data that can be sent. this can create a lag or stop aspects of a website form working as smoothly as needed such as a very long loading time resulting in the user potentially not using the website due to the long time it takes to access it.
+            Executions pre load - executions proformed pre load can increase the website laoding times, hwoever allows for the website to entirley work upon display to the user as it had everyting working before the user can use the website. this will make the website responsive faster and reduces lag and delay of input on website whih may not have executions made before the program laods. This increases the load times but lowers the amount of delay which can occur in the website and preets it for use by the user
+            Number of Hits - this affects a website as more poeple who are accessing the website  eans it will take longer for the infomation to the sent to the user as it takes time for each request to be sent which can cause a website to slow signficanly and can cause a website to crash if too many requests are made at once.
+        </div>
 
     </body>
 </html>
