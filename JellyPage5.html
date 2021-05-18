@@ -134,7 +134,7 @@
             
             .rightcol{
                 float: right;
-                width: 85%;
+                width: 55%;
             }
 
             .row::after{
@@ -190,6 +190,7 @@
             .error-cross {
                 position: relative;
                 float: left;
+                border: none;
                 width: 18px;
                 height: 19px;
                 margin-top: 4px;
@@ -258,11 +259,13 @@
                 
                     <div class="contact-left">
                         <label for="txtName">Name:</label>
+                        <div class="row"></div>
                         <div class="text-field-container">
                             <input type="text" name="txtName" value="">
                             <div class="error-cross"></div>
                         </div>
                         <label for="txtTelephone">Telephone:</label>
+                        <div class="row"></div>
                         <div class="text-field-container">
                             <input type="text" name="txtTelephone" value="">
                             <div class="error-cross"></div>
@@ -273,12 +276,14 @@
                     <div class="contact-right">
                 
                         <label for="txtCompany">Company:</label>
+                        <div class="row"></div>
                         <div class="text-field-container">
                         <input type="text" name="txtCompany" value="">
                         <div class="error-cross"></div>
                     </div>
                                 
                     <label for="txtEmailAddress">Email Address:</label>
+                    <div class="row"></div>
                     <div class="text-field-container">
                         <input type="text" name="txtEmailAddress" value="">
                         <div class="error-cross"></div>
@@ -287,6 +292,7 @@
                 </div>
                 
                 <label for="txtQuestion">Your Question:</label>
+                <div class="row"></div>
                 <textarea id="phone" name="txtQuestion"></textarea>
                 <div class="error-cross"></div>
                                 
