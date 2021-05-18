@@ -124,7 +124,7 @@
 
             .leftcol{
                 float: left;
-                width: 25%
+                width: 45%
             }
 
             .maincontent{
@@ -205,6 +205,66 @@
                 <div class="image-inner-container">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d150.91542815705347!2d0.3941578028423339!3d52.756606103503536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d7f4cd4b586e33%3A0x15f2cec931f97ae2!2s18+Tuesday+Market+Pl!5e0!3m2!1sen!2suk!4v1394470094378" width="235" height="300" frameborder="0" style="border:0"></iframe>
                 </div>
+            </div>
+
+        </div>
+        <div class="rightcol">
+            Contact us using Email or phone, or leave a question
+        </div>
+        <div class="rightcol">
+            <div class="region-title">
+                <h2>Contact us...</h2>
+            </div>
+                
+            <div class="region-text">
+                
+                            
+                
+                
+                <form action="/say-hello/" method="post">
+                
+                    <input type="hidden" name="submitted" value="1">
+                    <input type="hidden" name="frm" value="contact-us">
+                
+                    <div class="contact-left">
+                        <label for="txtName">Name:</label>
+                        <div class="text-field-container">
+                            <input type="text" name="txtName" value="">
+                            <div class="error-cross"></div>
+                        </div>
+                        <label for="txtTelephone">Telephone:</label>
+                        <div class="text-field-container">
+                            <input type="text" name="txtTelephone" value="">
+                            <div class="error-cross"></div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="contact-right">
+                
+                        <label for="txtCompany">Company:</label>
+                        <div class="text-field-container">
+                        <input type="text" name="txtCompany" value="">
+                        <div class="error-cross"></div>
+                    </div>
+                                
+                    <label for="txtEmailAddress">Email Address:</label>
+                    <div class="text-field-container">
+                        <input type="text" name="txtEmailAddress" value="">
+                        <div class="error-cross"></div>
+                    </div>
+                        
+                </div>
+                
+                <label for="txtQuestion">Your Question:</label>
+                <textarea id="phone" name="txtQuestion"></textarea>
+                <div class="error-cross"></div>
+                                
+                <div class="error-message">Oops! Please fill in all fields...</div>
+                <input type="submit" name="cmd" class="cbSubmitForm" value="SubmitQuestion">
+                
+                </form>
+                
             </div>
 
         </div>
